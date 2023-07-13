@@ -14,5 +14,7 @@ This is a Global Hack Week project aimed at creating a UI Component Library util
 # Resources
 
 - [Vite Start-up Documentation](https://vitejs.dev/guide/#command-line-interface)
+- [Tailwind CSS Installation Documentation](https://tailwindcss.com/docs/installation)
+
 - GHW Workshop: Build Your Own UI Component Library
   - [Part 1](https://www.youtube.com/watch?v=_5JZgTjKydU)
