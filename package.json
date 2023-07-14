@@ -3,6 +3,17 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ghw-components-library-vl-test.umd.cjs",
+  "module": "./dist/ghw-components-library-vl-test.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ghw-components-library-vl-test.js",
+      "require": "./dist/ghw-components-library-vl-test.umd.cjs"
+    }
+  },
   "description": "GHW UI Component library created with Vite, React & TailwindCSS",
   "author": "vlee4",
   "license": "MIT",
@@ -13,10 +24,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ghw-components-library-vl-test": "file:ghw-components-library-vl-test-1.0.0.tgz",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.4.2",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
