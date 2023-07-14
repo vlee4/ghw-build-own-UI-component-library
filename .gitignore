@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+ghw-components-library-vl-test-1.0.0.tgz
 
 # Editor directories and files
 .vscode/*
