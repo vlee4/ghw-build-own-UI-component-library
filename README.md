@@ -27,3 +27,7 @@ To test locally whether the library is working correctly or not, follow these st
 
 - GHW Workshop: Build Your Own UI Component Library
   - [Part 1](https://www.youtube.com/watch?v=_5JZgTjKydU)
+
+# Useful Development References
+
+- [Using React children props with Typescript](https://blog.logrocket.com/using-react-children-prop-with-typescript/)

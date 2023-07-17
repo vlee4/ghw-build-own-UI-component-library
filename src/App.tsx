@@ -1,6 +1,6 @@
 import './App.css'
 import Button from "./Components/Button"
-// import TestFile from "./TestFile"
+import TestArea from "./TestArea"
 
 function App() {
 
@@ -8,7 +8,9 @@ function App() {
     <>
       <section>
         <Button/>
-        {/* <TestFile></TestFile> */}
+        <TestArea>
+          <Button/>
+        </TestArea>
       </section>
     </>
   )
