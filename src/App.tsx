@@ -1,5 +1,5 @@
 import './App.css'
-import Button from "./Components/Button"
+import {Button} from "ghw-components-library-vl-test"
 import TestArea from "./TestArea"
 
 function App() {
