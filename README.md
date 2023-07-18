@@ -31,3 +31,4 @@ To test locally whether the library is working correctly or not, follow these st
 # Useful Development References
 
 - [Using React children props with Typescript](https://blog.logrocket.com/using-react-children-prop-with-typescript/)
+- [Mirroring HTML Element with React Typescript](https://react-typescript-cheatsheet.netlify.app/docs/advanced/patterns_by_usecase/)
