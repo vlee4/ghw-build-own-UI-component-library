@@ -18,7 +18,7 @@ To test locally whether the library is working correctly or not, follow these st
 1. Locally build the project with `npm run build`
 2. Run `npm pack` to create a tarball. A file something like `ghw-components-library-vl-test-1.0.0.tgz` should be generated in the root directory.
 3. Locally install the package with `npm add ghw-components-library-vl-test-1.0.0.tgz`. You should see the package added to `dependencies` in `package.json`.
-   ...tbc
+   ...
 
 # Resources
 
@@ -32,3 +32,9 @@ To test locally whether the library is working correctly or not, follow these st
 
 - [Using React children props with Typescript](https://blog.logrocket.com/using-react-children-prop-with-typescript/)
 - [Mirroring HTML Element with React Typescript](https://react-typescript-cheatsheet.netlify.app/docs/advanced/patterns_by_usecase/)
+
+# TO-DOs
+
+**NOTE** : There is currently a problem with applying classnames to the custom components. The classes applied to the `Button` component are applied when built and loaded in the dev environment, but if changed to other valid Tailwind CSS classes, while they show up in the browser inspector, they won't apply any actual styles. This occurs when changing the classes within the Button component file and when utilizing the Button component and passing classnames to that implementation.
+
+- This may have something to do with how the project is built / optimized. I'm guessing not all tailwind classes are loaded into the project after we've built the project and thus are not recognized when we change the classes, even if we are only changing the dev environment version.
