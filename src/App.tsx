@@ -1,6 +1,7 @@
-import './App.css'
-// import {Button} from "ghw-components-library-vl-test"
-import Button from "./Components/Button"
+// import './App.css'
+import {Button} from "ghw-components-library-vl-test"
+// import "ghw-components-library-vl-test/dist/style.css"
+import CustomButton from "./Components/Button"
 import TestArea from "./TestArea"
 
 function App() {
@@ -8,9 +9,10 @@ function App() {
   return (
     <>
       <section>
+        <CustomButton color="blue" onClick={()=>console.log("Hello")} >Hello</CustomButton>
         <TestArea>
-          <Button onClick={()=> console.log("Hello World")} style={{color:"red"}}>
-          Hello World
+          <Button className="bg-lime-600" onClick={()=> console.log("Byeeee")} >
+            Bye bye
           </Button>
         </TestArea>
       </section>

@@ -1,7 +1,7 @@
 {
   "name": "ghw-components-library-vl-test",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -12,6 +12,10 @@
     ".": {
       "import": "./dist/ghw-components-library-vl-test.js",
       "require": "./dist/ghw-components-library-vl-test.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "description": "GHW UI Component library created with Vite, React & TailwindCSS",
@@ -24,7 +28,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "ghw-components-library-vl-test": "file:ghw-components-library-vl-test-1.0.0.tgz",
+    "ghw-components-library-vl-test": "file:ghw-components-library-vl-test-1.0.3.tgz",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
