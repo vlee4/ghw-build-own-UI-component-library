@@ -25,7 +25,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean:install": "npm uninstall ghw-components-library-vl-test && rm -rf node_modules/ dist/ package-lock.json ghw-components-library-vl-test-*.tgz && npm install",
+    "build:lib": "npm run build && npm pack && npm add ghw-components-library-vl-test-*.tgz"
   },
   "dependencies": {
     "ghw-components-library-vl-test": "file:ghw-components-library-vl-test-1.0.3.tgz",
