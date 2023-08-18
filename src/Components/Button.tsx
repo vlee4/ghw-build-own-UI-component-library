@@ -3,22 +3,16 @@ import classNamesUtil from "./classNamesUtil";
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'>{
    children: ReactNode;
-   color: string;
+   className: string;
    onClick: () => void;
 }
 
-const Button = ({children, color, onClick, ...rest}: ButtonProps) => {
-
-   const colorVariants: { [key: string]: string } = {
-      blue: 'bg-blue-600 hover:bg-blue-500 text-white',
-      red: 'bg-red-500 hover:bg-red-400 text-white',
-      yellow: 'bg-yellow-300 hover:bg-yellow-400 text-black',
-    }
+const Button = ({children, className, onClick, ...rest}: ButtonProps) => {
 
  return (
     <button 
       onClick={onClick}
-      className={`${colorVariants[color]}`} 
+      className={`bg-sky-600 rounded-md p-2 m-2 ${className}`} 
       {...rest}>
       {children}
    </button>
