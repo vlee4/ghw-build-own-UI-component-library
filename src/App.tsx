@@ -1,4 +1,5 @@
 // import './App.css'
+// @ts-ignore
 import {Button} from "ghw-components-library-vl-test"
 import "ghw-components-library-vl-test/dist/style.css"
 import CustomButton from "./Components/Button"

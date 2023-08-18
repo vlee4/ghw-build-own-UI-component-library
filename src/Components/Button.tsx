@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+// @ts-ignore
 import classNamesUtil from "./classNamesUtil";
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'>{
