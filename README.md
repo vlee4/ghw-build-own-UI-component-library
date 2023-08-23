@@ -73,3 +73,8 @@ To test locally whether the library is working correctly or not, follow these st
   - [x] The reason why there's an error for the first import (cannot find module) is because in the build process `ghw-components-library-v1-test` is only created after the tsc checks for errors, as such, it makes sense that the compiler is unable to find that file. For now, I think this error is dismissable, because we are only importing `ghw-components-library-v1-test` into `App.tsx` in the first place in order to test whether our built component works. This situation shouldn't occur if someone where to use the UI library component I made.
 
   - [ ]The second import complains that `classNamesUtil` is imported but not used, which is true. Strangely enough, the streamer who led this project suggested that just by importing this utility function, it would be used. This could use some extra investigation honestly.
+
+- **3** - If we were ever to publish this to npm it should be noted that `ghw-components-library-vl-test` should be uninstalled first. If it's not then there will be a circular dependency in the package. Also the `node_modules` and `package-lock.json` should be removed, as users will set that up in their own projects.
+  All this can be done with `npm run publish:lib`.
+
+  - Something else to note is that an npm account will have to be made to publish the package. Then, `npm login` should be run, so that when the package is published it will be under that account.
