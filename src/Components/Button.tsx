@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 import classNamesUtil from "./classNamesUtil";
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'>{
-   children: ReactNode;
-   className: string;
+   children?: ReactNode;
+   className?: string;
    onClick: () => void;
 }
 
