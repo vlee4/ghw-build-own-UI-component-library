@@ -78,3 +78,8 @@ To test locally whether the library is working correctly or not, follow these st
   All this can be done with `npm run publish:lib`.
 
   - Something else to note is that an npm account will have to be made to publish the package. Then, `npm login` should be run, so that when the package is published it will be under that account.
+
+- **4** - I ran into an issue where I was getting a TypeError in `setup.ts` over the `expect.extend`. It said `TypeError: Cannot convert undefined or null to object`. This seems to be due to a breaking change involving `extend-expect`, so using `import * as matchers from '@testing-library/jest-dom/matchers` was suggested to fix this.
+  https://github.com/testing-library/jest-dom/issues/439#issuecomment-1697873727
+
+The different import is also referenced here in the Jest-dom readme: https://github.com/testing-library/jest-dom#with-another-jest-compatible-expect
