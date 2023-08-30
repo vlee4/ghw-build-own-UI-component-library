@@ -24,9 +24,14 @@ To test locally whether the library is working correctly or not, follow these st
 
 - [Vite Start-up Documentation](https://vitejs.dev/guide/#command-line-interface)
 - [Tailwind CSS Installation Documentation](https://tailwindcss.com/docs/installation)
+- [Vitest Configuration](https://vitest.dev/guide/#configuring-vitest)
+- [React Testing Library API](https://testing-library.com/docs/react-testing-library/api)
+- [Jest-dom matchers](https://github.com/testing-library/jest-dom/)
 
 - GHW Workshop: Build Your Own UI Component Library
   - [Part 1](https://www.youtube.com/watch?v=_5JZgTjKydU)
+  - [Part 2](https://www.youtube.com/watch?v=NmziiKvFqDg)
+  - [Part 3](https://www.youtube.com/watch?v=ohQS6XL9P8Q)
 
 # Useful Development References
 
