@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 ghw-components-library-vl-test*
+coverage
 
 # Editor directories and files
 .vscode/*
