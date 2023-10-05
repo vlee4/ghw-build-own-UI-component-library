@@ -31,7 +31,9 @@
     "build:prod": "npm run clean:install && npm run build:lib",
     "publish:lib": "npm uninstall ghw-components-library-vl-test && rm -rf node_modules package-lock.json && npm publish",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "ghw-components-library-vl-test": "file:ghw-components-library-vl-test-1.0.3.tgz",
@@ -39,6 +41,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.6",
+    "@storybook/addon-interactions": "^7.4.6",
+    "@storybook/addon-links": "^7.4.6",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.6",
+    "@storybook/react": "^7.4.6",
+    "@storybook/react-vite": "^7.4.6",
+    "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^20.4.2",
@@ -52,8 +62,10 @@
     "eslint": "^8.44.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
+    "eslint-plugin-storybook": "^0.6.14",
     "jsdom": "^22.1.0",
     "postcss": "^8.4.25",
+    "storybook": "^7.4.6",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.0",
